@@ -1,0 +1,75 @@
+# FreshMart - E-Commerce Backend
+
+Welcome to **FreshMart** — a simple and scalable e-commerce backend built using **Spring Boot**.  
+This project provides RESTful APIs for managing products, orders, customers, and authentication functionalities.
+
+---
+
+## 🛠️ Tech Stack
+
+- Java 17+
+- Spring Boot
+- Spring Security
+- CORS Configuration
+- Maven
+- MySQL (or your preferred database)
+- Docker (optional for deployment)
+
+---
+
+## 📂 Project Structure
+
+freshmart_final/ ├── final_spring/ │ ├── pom.xml │ ├── src/ │ │ ├── main/ │ │ │ ├── java/ │ │ │ │ └── com.ecommerce │ │ │ │ ├── ECommerceApplication.java │ │ │ │ ├── configuration/ │ │ │ │ │ ├── SimpleCorsFilter.java │ │ │ │ │ └── WebSecurityConfiguration.java │ │ │ │ ├── controller/ │ │ │ │ │ └── [API Controllers here] │ │ │ ├── resources/ │ │ │ └── application.properties │ ├── .gitignore │ ├── mvnw, mvnw.cmd
+
+yaml
+Copy
+Edit
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Java 17+
+- Maven installed
+- MySQL database (optional if connecting)
+- IDE (IntelliJ IDEA, Eclipse, VS Code)
+
+### Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/freshmart_final.git
+cd freshmart_final/final_spring
+Configure Database
+
+Edit src/main/resources/application.properties:
+
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:mysql://localhost:3306/freshmart
+spring.datasource.username=your-username
+spring.datasource.password=your-password
+spring.jpa.hibernate.ddl-auto=update
+Build and Run
+
+bash
+Copy
+Edit
+./mvnw clean install
+./mvnw spring-boot:run
+Server will start on: http://localhost:8080
+
+✨ Features
+User Authentication and Authorization (Spring Security)
+
+CORS Filter configured
+
+REST APIs for managing e-commerce functionalities
+
+Secure API endpoints
+
+Scalability ready (Docker/Microservices integration possible)
